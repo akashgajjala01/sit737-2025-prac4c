@@ -16,3 +16,29 @@
 {"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
 {"level":"info","message":"New subtract operation: 10 subtract 5 = 5","service":"calculator-microservice"}
 {"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New power operation: 2 power 3 = 8","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /sqrt?num=25","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /sqrt?num=25","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /sqrt?num=49","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New sqrt operation: 25 sqrt 5 = 5","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New sqrt operation: 49 sqrt 5 = 7","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New sqrt operation: 49 sqrt 7 = 7","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New sqrt operation: 49 sqrt 5 = 7","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New sqrt operation: 49 sqrt null = 7","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New sqrt operation: 49 sqrt null = 7","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New power operation: 2 power 3 = 8","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New mod operation: 10 mod 3 = 1","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}
+{"level":"info","message":"New sqrt operation: 49 sqrt null = 7","service":"calculator-microservice"}
+{"level":"error","message":"Invalid request: /favicon.ico","service":"calculator-microservice"}

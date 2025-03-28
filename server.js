@@ -17,8 +17,8 @@ const logger = winston.createLogger({
 });
 
 // Function to validate numbers
-const validateNumbers = (num1, num2) => {
-    if (isNaN(num1) || isNaN(num2)) {
+const validateNumbers = (num1, num2 = null) => {
+    if (isNaN(num1) || (num2 !== null && isNaN(num2))) {
         return 'Invalid input: Please provide valid numbers.';
     }
     return null;
@@ -28,8 +28,8 @@ const validateNumbers = (num1, num2) => {
 app.get('/:operation', (req, res) => {
     const { operation } = req.params;
     const num1 = parseFloat(req.query.num1);
-    const num2 = parseFloat(req.query.num2);
-
+    const num2 = req.query.num2 !== undefined ? parseFloat(req.query.num2) : null;
+    
     // Validate inputs
     const errorMsg = validateNumbers(num1, num2);
     if (errorMsg) {
@@ -49,6 +49,15 @@ app.get('/:operation', (req, res) => {
             }
             result = num1 / num2;
             break;
+        case 'power': result = Math.pow(num1, num2); break;
+        case 'sqrt':
+            if (num1 < 0) {
+                logger.error('Square root of a negative number attempt.');
+                return res.status(400).json({ error: 'Cannot calculate the square root of a negative number.' });
+            }
+            result = Math.sqrt(num1);
+            break;
+        case 'mod': result = num1 % num2; break;
         default:
             return res.status(400).json({ error: 'Invalid operation.' });
     }
